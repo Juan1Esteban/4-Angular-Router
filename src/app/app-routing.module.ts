@@ -21,11 +21,11 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'category',
+    path: 'category/:id',
     component: CategoryComponent
   },
   {
-    path: 'cart',
+    path: 'my-cart',
     component: MycartComponent
   },
   {
