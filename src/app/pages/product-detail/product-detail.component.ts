@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs';
 
@@ -17,7 +18,8 @@ export class ProductDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
@@ -37,7 +39,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   goToBack() {
-
+    this.location.back();
   }
 
 }
