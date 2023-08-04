@@ -32,7 +32,7 @@ import { NavComponent } from './components/nav/nav.component';
     CommonModule,
     WebsiteRoutingModule,
     SwiperModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class WebsiteModule { }
